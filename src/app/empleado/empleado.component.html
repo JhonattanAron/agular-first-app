@@ -1,5 +1,16 @@
-<p style="border: solid green; padding: 10px; margin: 10px;" >
-    Nombre: {{getNombre()}} {{getApellido()}} <br>
-    Edad: {{getEdad()>18 ? "Menor de Edad" : "Mayor de Edad"}} <br>
-    Empresa: {{getEmpresa()}}
-</p>
+<div style="border: solid red; margin: 10px  ; padding: 10px;">
+    <p style="border: solid green; padding: 10px; margin: 10px;" >
+        Nombre: {{getNombre()}} {{getApellido()}} <br>
+        Edad: {{getEdad()}} <br>
+        Empresa: {{edad.value}}
+    </p>
+    <div style="border: solid rgb(219, 223, 6);padding: 10px; margin: 10px; display: flex; flex-direction: column;">
+        <h5>Introduce la Empresa:</h5> 
+        <input [disabled]="habilitacionCuadro" style="margin-bottom: 10px; width: 30%;" type="text" #edad (keyup)="0"> 
+    </div> 
+    Registrado <input  type="checkbox"  id="registro" [checked]="UsuRegistrado"/>
+</div>
+
+
+
+

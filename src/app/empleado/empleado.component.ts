@@ -10,6 +10,9 @@ export class EmpleadoComponent {
   private apellido = "Diaz"
   private edad = 18
   private empresa = "AdaptLeap"
+  protected habilitacionCuadro = false;
+  protected UsuRegistrado = true;
+
 
   protected getNombre(){
     return this.nombre
@@ -25,4 +28,8 @@ export class EmpleadoComponent {
     return this.edad
   }
 
+  protected getRegistroUsuario(){
+    this.UsuRegistrado = false
+  }
+  
 }
