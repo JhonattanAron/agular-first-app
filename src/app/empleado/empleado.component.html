@@ -2,12 +2,14 @@
     <p style="border: solid green; padding: 10px; margin: 10px;" >
         Nombre: {{getNombre()}} {{getApellido()}} <br>
         Edad: {{getEdad()}} <br>
-        Empresa: {{getEmpresa()}}
+        Empresa: {{empresa}}
     </p>
     <div style="border: solid rgb(219, 223, 6);padding: 10px; margin: 10px; display: flex; flex-direction: column;">
         <h5>Introduce la Empresa:</h5> 
-        <input [disabled]="habilitacionCuadro" style="margin-bottom: 10px; width: 30%;" type="text" #edad (keyup)="0"> 
+        <!--<input [disabled]="habilitacionCuadro" style="margin-bottom: 10px; width: 30%;" type="text" #edad (keyup)="0"> 
         <button style="padding: 10px;width: 20vh; background-color: aqua; color: rgb(0, 0, 0); border-radius: 10px;border: none;" (click)="guardarEmpresa(edad.value)">Guardar</button>
+        -->
+        <input type="text"  [(ngModel)]="empresa">
     </div> 
     {{textoDeRegistro}}<br> <br>
     Registrado <input  type="radio" name="rRegistro" value="si"  id="registrado" [checked]="UsuRegistrado" (click)="setUsuarioRegistro($event)" />

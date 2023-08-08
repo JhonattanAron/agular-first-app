@@ -9,7 +9,7 @@ export class EmpleadoComponent {
   private nombre = "Juan"
   private apellido = "Diaz"
   private edad = 18
-  private empresa:String = ""
+  protected empresa:String = "AdaptLeap"
   protected habilitacionCuadro = false;
   protected UsuRegistrado = true;
   protected textoDeRegistro = "NO HAY NADIE REGISTRADO"
